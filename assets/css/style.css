@@ -9,8 +9,28 @@
     border:1px solid black;
     min-height:100px;
 } */
+#site_header{
+    height:5vh;
+}
+
+#site_main{
+    height:95vh;
+}
+
+#ms_leftrow{
+    width:10%;
+    height:95vh;
+}
+
+#ms_sidebar{
+    background-color: turquoise;
+    background-color: var(--darkest);
+}
 
 .bg_darker{
     background-color: var(--darker);
 }
 
+.bg_darkest{
+    background-color: var(--darkest);
+}
