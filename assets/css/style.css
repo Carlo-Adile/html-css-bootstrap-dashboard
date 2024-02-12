@@ -1,0 +1,16 @@
+:root{
+    --main: #1b72e8;
+    --dark: #f8f9fa;
+    --darker: #e5e5e5;
+    --darkest: #051e34;
+}
+
+/* .debug{
+    border:1px solid black;
+    min-height:100px;
+} */
+
+.bg_darker{
+    background-color: var(--darker);
+}
+
