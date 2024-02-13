@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 :root{
     --main: #1b72e8;
     --dark: #f8f9fa;
@@ -7,8 +10,8 @@
 }
 
 .debug{
-    border:1px solid black;
-    /* min-height:50px; */
+    border:1px dashed black;
+    min-height:100px;
 }
 
 .bg_darker{
@@ -27,18 +30,42 @@
 
 body{
     height:100vh;
+    overflow-y: hidden;
 }
 
+#site_header{
+    height:50px;
+}
+
+#ms_application{
+    height:calc(100%-50px);
+}
+
+/* left section */
 #ms_sidebar{
-    width:calc((100%/12)*1);
+    width:140px;
+    min-width:140px;
     background-image: url(../img/sidebar-bg.png);
     background-color: var(--darkest);
-
     li{
         padding:3px;
     }
 }
 
-#ms_main_application{
-    
+/* right section */
+#ms_rightbar{
+    flex-grow: 1;
+    background-color:var(--dark);
+    overflow-y: auto;
+}
+
+#ms_top_banner{
+    background-color: var(--main);
+}
+
+/* xl breakpoint */
+@media screen and (max-width: 1200px){
+    #ms_sidebar{
+        width:70px;
+    }
 }
