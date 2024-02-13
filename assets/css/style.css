@@ -9,10 +9,10 @@
     --badge: #165bba;
 }
 
-.debug{
+/* .debug{
     border:1px dashed black;
     min-height:100px;
-}
+} */
 
 .bg_darker{
     background-color: var(--darker);
@@ -43,6 +43,7 @@ body{
 
 #ms_dashboard{
     height:calc(100%-60px);
+    overflow-y: auto;
 }
 
 /* left section */
