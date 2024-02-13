@@ -55,159 +55,47 @@
             </div>
         </nav>
     </header>
-    <main id="site_main">
+    <main id="site_main" class="h-100 debug">
         <!-- main application -->
-        <section id="ms_main_container">
-            <div class="container-fluid d-flex">
-                <!-- left row/sidebar -->
-                <div class="row bg_darkest" id="ms_leftrow">
-                    <div class="col d-flex flex-wrap py-4" id="ms_sidebar">
-                        <!-- top list -->
-                        <div class="d-flex align-self-start">
-                            <ul class="nav">
-                                <li class="nav-item">
-                                    <a class="nav-link text-white" aria-current="page" href="#"><i class="fa-solid fa-house"></i> Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-white" aria-current="page" href="#"><i class="fa-solid fa-chart-simple"></i> Stats</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-white" aria-current="page" href="#"><i class="fa-solid fa-signal"></i> Signals</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="d-flex align-self-end">
-                            <!-- bottom list -->
-                        <ul class="nav">
-                            <li class="nav-item align-self-end">
-                                <a class="nav-link text-white" aria-current="page" href="#"><i class="fa-solid fa-gear"></i>  Admin</a>
-                            </li>
-                        </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- right row/main windows -->
-                <div class="row" id="ms_rightrow">
-                    <!-- top/statistics -->
-                    <div class="col-12 d-flex bg_main">
-                        <div class="col-4">ciao</div>
-                        <div class="col-4">ciao</div>
-                        <div class="col-4">ciao</div>
-                    </div>
-                    <!-- next class -->
-                    <div class="col-8 debug">
-                        <div class="card">
-                            <div>
-                                <h2>
-                                    Prossime classi
-                                </h2>
-                            </div>
-                            <div>
-                                <div
-                                    class="table-responsive"
-                                >
-                                    <table
-                                        class="table table-primary"
-                                    >
-                                        <thead>
-                                            <tr>
-                                                <th scope="col-8">Nome</th>
-                                                <th scope="col-1">Data inizio</th>
-                                                <th scope="col-1">ROI</th>
-                                                <th scope="col-1">Stato</th>
-                                                <th scope="col-1">Azioni</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="">
-                                                <td scope="row">R1C1</td>
-                                                <td>Classe 75</td>
-                                                <td>15 Feb 2021</td>
-                                                <td>ROI 20%</td>
-                                                <td>Done</td>
-                                                <td>Done</td>
-                                            </tr>
-                                            
-                                        </tbody>
-                                    </table>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <!-- f.a.q. -->
-                    <div class="col-8 debug">
-                        <h2>
-                            F.A.Q.
-                        </h2>
-                        <div class="accordion" id="accordionExample">
-                            <!-- first accordion -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button
-                                        class="accordion-button"
-                                        type="button"
-                                        data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne"
-                                        aria-expanded="true"
-                                        aria-controls="collapseOne"
-                                    >
-                                        Come aggiungere un nuovo studente?
-                                    </button>
-                                </h2>
-                                <div
-                                    id="collapseOne"
-                                    class="accordion-collapse collapse show"
-                                    aria-labelledby="headingOne"
-                                    data-bs-parent="#accordionExample"
-                                >
-                                    <div class="accordion-body">
-                                        This is the first item's accordion body.
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- second accordion -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button
-                                        class="accordion-button"
-                                        type="button"
-                                        data-bs-toggle="collapse"
-                                        data-bs-target="#collapseTwo"
-                                        aria-expanded="true"
-                                        aria-controls="collapseTwo"
-                                    >
-                                        Come posso accedere alle informazioni del mio account?
-                                    </button>
-                                </h2>
-                                <div
-                                    id="collapseTwo"
-                                    class="accordion-collapse collapse show"
-                                    aria-labelledby="headingTwo"
-                                    data-bs-parent="#accordionExample"
-                                >
-                                    <div class="accordion-body">
-                                        This is the first item's accordion body.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <!-- todo -->
-                    <div class="col-4 debug">
-                        <div class="card">
-                            <div class="card-header">
-                                Todo
-                            </div>
-                            <div class="card-body">
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div id="ms_application" class="h-100 d-flex">
+            <!-- left bar -->
+            <div id="ms_sidebar" class="d-flex h-100 py-3 flex-column justify-content-between text-white">
+                <!-- upper list -->
+                <ul class="list-unstyled mx-auto">
+                    <li>
+                        <a href="#" class="nav-link d-flex align-items-center">
+                            <i class="fa-solid fa-house"></i>
+                            <span class="d-none d-lg-block">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link d-flex align-items-center">
+                            <i class="fa-solid fa-chart-simple"></i>
+                            <span class="d-none d-lg-block">Stats</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link d-flex align-items-center">
+                            <i class="fa-solid fa-signal"></i>
+                            <span class="d-none d-lg-block">Signals</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- lower list -->
+                <ul class="list-unstyled mx-auto">
+                    <li>
+                        <a href="#" class="nav-link d-flex align-items-center">
+                            <i class="fa-solid fa-house"></i>
+                            <span class="d-none d-lg-block"> Settings</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </section>
+            <div id="ms_main_application">
+                
+            </div>
+        </div>
+        
         
     </main>
     <footer id="site_footer">

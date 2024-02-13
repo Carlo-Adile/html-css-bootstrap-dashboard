@@ -3,40 +3,12 @@
     --dark: #f8f9fa;
     --darker: #e5e5e5;
     --darkest: #051e34;
+
 }
 
-/* .debug{
+.debug{
     border:1px solid black;
-    min-height:100px;
-} */
-
-#site_header{
-    height: 50px;
-}
-
-#site_main{
-    
-}
-
-#ms_main_container{
-    display: flex;
-    width:100vw;
-    height:95vh;
-}
-
-#ms_leftrow{
-    width:calc((100%/12)*1);
-    height:100%;
-}
-
-#ms_sidebar{
-    background-color: turquoise;
-    background-color: var(--darkest);
-}
-
-#ms_rightrow{
-    width:calc((100%/12)*11);
-    background-color: beige;
+    /* min-height:50px; */
 }
 
 .bg_darker{
@@ -49,4 +21,24 @@
 
 .bg_main{
     background-color: var(--main);
+}
+
+/* web application sections */
+
+body{
+    height:100vh;
+}
+
+#ms_sidebar{
+    width:calc((100%/12)*1);
+    background-image: url(../img/sidebar-bg.png);
+    background-color: var(--darkest);
+
+    li{
+        padding:3px;
+    }
+}
+
+#ms_main_application{
+    
 }
