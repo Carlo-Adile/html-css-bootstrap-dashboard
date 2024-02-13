@@ -9,22 +9,34 @@
     border:1px solid black;
     min-height:100px;
 } */
+
 #site_header{
-    height:5vh;
+    height: 50px;
 }
 
 #site_main{
+    
+}
+
+#ms_main_container{
+    display: flex;
+    width:100vw;
     height:95vh;
 }
 
 #ms_leftrow{
-    width:10%;
-    height:95vh;
+    width:calc((100%/12)*1);
+    height:100%;
 }
 
 #ms_sidebar{
     background-color: turquoise;
     background-color: var(--darkest);
+}
+
+#ms_rightrow{
+    width:calc((100%/12)*11);
+    background-color: beige;
 }
 
 .bg_darker{
@@ -33,4 +45,8 @@
 
 .bg_darkest{
     background-color: var(--darkest);
+}
+
+.bg_main{
+    background-color: var(--main);
 }
