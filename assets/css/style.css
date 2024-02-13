@@ -56,6 +56,10 @@ body{
     }
 }
 
+.ms_avatar{
+    width:1.3rem;
+}
+
 /* right section */
 #ms_rightbar{
     flex-grow: 1;
@@ -65,6 +69,10 @@ body{
 
 #ms_top_banner{
     background-color: var(--main);
+}
+
+#newStudent{
+    width:40%;
 }
 
 /* xl breakpoint */
