@@ -41,14 +41,16 @@ body{
     height:50px;
 }
 
-#ms_application{
+#ms_dashboard{
     height:calc(100%-50px);
 }
 
 /* left section */
 #ms_sidebar{
     width:140px;
-    min-width:140px;
+    flex-shrink: 0;
+    height:calc(100%-50px);
+    overflow-y:hidden;
     background-image: url(../img/sidebar-bg.png);
     background-color: var(--darkest);
     li{
@@ -71,13 +73,16 @@ body{
     background-color: var(--main);
 }
 
+/* offcanvas */
 #newStudent{
     width:40%;
+    min-width:500px;
 }
 
 /* xl breakpoint */
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 992px){
     #ms_sidebar{
         width:70px;
+        
     }
 }
