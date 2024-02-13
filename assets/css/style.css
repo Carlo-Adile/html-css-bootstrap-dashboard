@@ -6,7 +6,7 @@
     --dark: #f8f9fa;
     --darker: #e5e5e5;
     --darkest: #051e34;
-
+    --badge: #165bba;
 }
 
 .debug{
@@ -26,6 +26,10 @@
     background-color: var(--main);
 }
 
+.ms_badge{
+    color:white;
+    background-color: var(--badge);
+}
 /* web application sections */
 
 body{
