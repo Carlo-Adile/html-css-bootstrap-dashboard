@@ -9,6 +9,11 @@
     --badge: #165bba;
 }
 
+::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    border: 1px solid #fff;
+  }
+
 /* .debug{
     border:1px dashed black;
     min-height:100px;
@@ -30,11 +35,11 @@
     color:white;
     background-color: var(--badge);
 }
-/* web application sections */
 
+/* web application sections */
 body{
     height:100vh;
-    overflow-y: hidden;
+    
 }
 
 #site_header{
@@ -42,15 +47,16 @@ body{
 }
 
 #ms_dashboard{
-    height:calc(100%-60px);
-    overflow-y: auto;
+    height:calc(100% - 60px);
+    overflow-y: hidden;
 }
 
 /* left section */
 #ms_sidebar{
     width:140px;
     flex-shrink: 0;
-    height:calc(100%-60px);
+    height:calc(100vh - 60px);
+    /* height:100%; */
     overflow-y:hidden;
     background-image: url(../img/sidebar-bg.png);
     background-color: var(--darkest);
@@ -67,6 +73,7 @@ body{
 #ms_rightbar{
     flex-grow: 1;
     background-color:var(--dark);
+    height:calc(100vh - 60px);
     overflow-y: auto;
 }
 
