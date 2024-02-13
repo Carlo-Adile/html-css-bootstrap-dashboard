@@ -38,18 +38,18 @@ body{
 }
 
 #site_header{
-    height:50px;
+    height:60px;
 }
 
 #ms_dashboard{
-    height:calc(100%-50px);
+    height:calc(100%-60px);
 }
 
 /* left section */
 #ms_sidebar{
     width:140px;
     flex-shrink: 0;
-    height:calc(100%-50px);
+    height:calc(100%-60px);
     overflow-y:hidden;
     background-image: url(../img/sidebar-bg.png);
     background-color: var(--darkest);
