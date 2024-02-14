@@ -9,10 +9,22 @@
     --badge: #165bba;
 }
 
+::-webkit-scrollbar {
+    height: 1rem;
+    width: .5rem;
+}
+
 ::-webkit-scrollbar-thumb {
     border-radius: 6px;
     border: 1px solid #fff;
   }
+
+  ::-webkit-scrollbar-thumb {
+    --tw-border-opacity: 1;
+    background-color: var(--darker);
+    border-radius: 9999px;
+    border-width: 1px;
+}
 
 /* .debug{
     border:1px dashed black;
