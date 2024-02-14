@@ -121,10 +121,27 @@ body{
     margin:2px;
 }
 
-/* xl breakpoint */
+/* lg breakpoint */
 @media screen and (max-width: 992px){
     #ms_sidebar{
         width:70px;
-        
     }
+}
+
+/* md breakpoint */
+@media screen and (max-width: 576px){
+    
+    tr{
+        :nth-child(2),
+        :nth-child(3){
+            display: none;
+        }
+    }
+
+    td{
+        :nth-child(2),
+        :nth-child(3){
+            display: inline;
+    }
+}
 }
