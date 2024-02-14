@@ -59,6 +59,10 @@ body{
     height:60px;
 }
 
+#ms_mobile_logo{
+    height:45px;
+}
+
 #ms_dashboard{
     height:calc(100% - 60px);
     overflow-y: hidden;
@@ -80,9 +84,6 @@ body{
           }
     }
 }
-
-/* 
-var(--bs-emphasis-color); */
 
 /* right section */
 #ms_rightbar{
