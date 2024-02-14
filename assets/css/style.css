@@ -36,10 +36,11 @@
     background-color: var(--badge);
 }
 
-/* web application sections */
+/* main sections */
 body{
     height:100vh;
     font-family: "Roboto", sans-serif;
+    font-weight:500!important;
 }
 
 #site_header{
@@ -65,10 +66,6 @@ body{
     }
 }
 
-.ms_avatar{
-    width:1.3rem;
-}
-
 /* right section */
 #ms_rightbar{
     flex-grow: 1;
@@ -85,6 +82,24 @@ body{
 #newStudent{
     width:40%;
     min-width:500px;
+}
+
+/* table */
+#ms_class_table{
+    tr,
+    td,
+    th{
+        align-items: center;
+        font-weight: 500;
+        :nth-child(n+2):nth-child(-n+5){
+            text-align: center;
+        }
+    }
+}
+
+.ms_avatar{
+    width:1.8rem;
+    margin:2px;
 }
 
 /* xl breakpoint */

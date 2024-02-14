@@ -98,7 +98,7 @@
                 </ul>
             </div>
             <div id="ms_rightbar">
-                <!-- top banner -->
+                <!-- top section banner -->
                 <div id="ms_top_banner" class="container-fluid">
                     <div class="row text-white p-1">
                         <!-- first column: boolean and badges -->
@@ -219,7 +219,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- other  parts -->
+                <!-- left and right section -->
                 <div class="container-fluid">
                     <div class="row">
                         <!-- left main -->
@@ -231,17 +231,18 @@
                                         <h4>Prossime classi</h4>
                                     </div>
                                     <div class="card-body">
-                                        <table class="table">
+                                        <table class="table" id="ms_class_table">
                                             <thead>
                                                 <tr>
-                                                    <th scope="col">Nome</th>
-                                                    <th scope="col">Data inizio</th>
-                                                    <th scope="col">ROI</th>
-                                                    <th scope="col">Stato</th>
-                                                    <th scope="col">Azioni</th>
+                                                    <th scope="col" class="col-6">Nome</th>
+                                                    <th scope="col" class="col">Data inizio</th>
+                                                    <th scope="col" class="col">ROI</th>
+                                                    <th scope="col" class="col">Stato</th>
+                                                    <th scope="col" class="col">Azioni</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
+                                                <!-- row 1 -->
                                                 <tr>
 
                                                     <td>
@@ -253,22 +254,137 @@
                                                     </td>
                                                     <td>15 Feb 2021</td>
                                                     <td>20%</td>
-                                                    <td><span class="badge rounded-pill bg_main">Done</span></td>
+                                                    <td><span class="badge rounded-pill text-bg-success">Done</span></td>
                                                     <td><i
-                                                            class="fa-solid fa-pencil border p-2 mx-1 text-secondary rounded"></i><i
-                                                            class="fa-solid fa-trash border p-2 mx-1 text-secondary rounded"></i>
+                                                            class="fa-solid fa-pencil border border-secondary p-2 mx-1 text-secondary rounded"></i><i
+                                                            class="fa-solid fa-trash border border-secondary p-2 mx-1 text-secondary rounded"></i>
                                                     </td>
                                                 </tr>
+                                                <!-- row 2 -->
                                                 <tr>
-                                                    <th scope="row">2</th>
-                                                    <td>Jacob</td>
-                                                    <td>Thornton</td>
-                                                    <td>@fat</td>
+
+                                                    <td>
+                                                        <img src="./assets/img/class-avatar.jpg" alt=""
+                                                            class="ms_avatar img-fluid rounded-circle">
+                                                        <span>
+                                                            Classe 76
+                                                        </span>
+                                                    </td>
+                                                    <td>16 Feb 2021</td>
+                                                    <td>20%</td>
+                                                    <td><span class="badge rounded-pill text-bg-success">Done</span></td>
+                                                    <td><i
+                                                            class="fa-solid fa-pencil border border-secondary p-2 mx-1 text-secondary rounded"></i><i
+                                                            class="fa-solid fa-trash border border-secondary p-2 mx-1 text-secondary rounded"></i>
+                                                    </td>
                                                 </tr>
+                                                <!-- row 3 -->
                                                 <tr>
-                                                    <th scope="row">3</th>
-                                                    <td colspan="2">Larry the Bird</td>
-                                                    <td>@twitter</td>
+
+                                                    <td>
+                                                        <img src="./assets/img/class-avatar.jpg" alt=""
+                                                            class="ms_avatar img-fluid rounded-circle">
+                                                        <span>
+                                                            Classe 77
+                                                        </span>
+                                                    </td>
+                                                    <td>17 Feb 2021</td>
+                                                    <td>20%</td>
+                                                    <td><span class="badge rounded-pill bg-warning">Process</span></td>
+                                                    <td><i
+                                                            class="fa-solid fa-pencil border border-secondary p-2 mx-1 text-secondary rounded"></i><i
+                                                            class="fa-solid fa-trash border border-secondary p-2 mx-1 text-secondary rounded"></i>
+                                                    </td>
+                                                </tr>
+                                                <!-- row 4 -->
+                                                <tr>
+
+                                                    <td>
+                                                        <img src="./assets/img/class-avatar.jpg" alt=""
+                                                            class="ms_avatar img-fluid rounded-circle">
+                                                        <span>
+                                                            Classe 78
+                                                        </span>
+                                                    </td>
+                                                    <td>18 Feb 2021</td>
+                                                    <td>20%</td>
+                                                    <td><span class="badge rounded-pill text-bg-success">Done</span></td>
+                                                    <td><i
+                                                            class="fa-solid fa-pencil border border-secondary p-2 mx-1 text-secondary rounded"></i><i
+                                                            class="fa-solid fa-trash border border-secondary p-2 mx-1 text-secondary rounded"></i>
+                                                    </td>
+                                                </tr>
+                                                <!-- row 5 -->
+                                                <tr>
+
+                                                    <td>
+                                                        <img src="./assets/img/class-avatar.jpg" alt=""
+                                                            class="ms_avatar img-fluid rounded-circle">
+                                                        <span>
+                                                            Classe 79
+                                                        </span>
+                                                    </td>
+                                                    <td>19 Feb 2021</td>
+                                                    <td>20%</td>
+                                                    <td><span class="badge rounded-pill text-bg-danger">Failed</span></td>
+                                                    <td><i
+                                                            class="fa-solid fa-pencil border border-secondary p-2 mx-1 text-secondary rounded"></i><i
+                                                            class="fa-solid fa-trash border border-secondary p-2 mx-1 text-secondary rounded"></i>
+                                                    </td>
+                                                </tr>
+                                                <!-- row 6 -->
+                                                <tr>
+
+                                                    <td>
+                                                        <img src="./assets/img/class-avatar.jpg" alt=""
+                                                            class="ms_avatar img-fluid rounded-circle">
+                                                        <span>
+                                                            Classe 80
+                                                        </span>
+                                                    </td>
+                                                    <td>20 Feb 2021</td>
+                                                    <td>20%</td>
+                                                    <td><span class="badge rounded-pill text-bg-success">Done</span></td>
+                                                    <td><i
+                                                            class="fa-solid fa-pencil border border-secondary p-2 mx-1 text-secondary rounded"></i><i
+                                                            class="fa-solid fa-trash border border-secondary p-2 mx-1 text-secondary rounded"></i>
+                                                    </td>
+                                                </tr>
+                                                <!-- row 7 -->
+                                                <tr>
+
+                                                    <td>
+                                                        <img src="./assets/img/class-avatar.jpg" alt=""
+                                                            class="ms_avatar img-fluid rounded-circle">
+                                                        <span>
+                                                            Classe 81
+                                                        </span>
+                                                    </td>
+                                                    <td>21 Feb 2021</td>
+                                                    <td>20%</td>
+                                                    <td><span class="badge rounded-pill text-bg-danger">Failed</span></td>
+                                                    <td><i
+                                                            class="fa-solid fa-pencil border border-secondary p-2 mx-1 text-secondary rounded"></i><i
+                                                            class="fa-solid fa-trash border border-secondary p-2 mx-1 text-secondary rounded"></i>
+                                                    </td>
+                                                </tr>
+                                                <!-- row 8 -->
+                                                <tr>
+
+                                                    <td>
+                                                        <img src="./assets/img/class-avatar.jpg" alt=""
+                                                            class="ms_avatar img-fluid rounded-circle">
+                                                        <span>
+                                                            Classe 82
+                                                        </span>
+                                                    </td>
+                                                    <td>22 Feb 2021</td>
+                                                    <td>20%</td>
+                                                    <td><span class="badge rounded-pill text-bg-success">Done</span></td>
+                                                    <td><i
+                                                            class="fa-solid fa-pencil border border-secondary p-2 mx-1 text-secondary rounded"></i><i
+                                                            class="fa-solid fa-trash border border-secondary p-2 mx-1 text-secondary rounded"></i>
+                                                    </td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -287,8 +403,8 @@
                                     <div class="accordion" id="accordionExample">
                                         <!-- item 1 -->
                                         <div class="accordion-item">
-                                            <h2 class="accordion-header">
-                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            <h2 class="accordion-header fw-medium">
+                                                <button class="accordion-button fw-medium" type="button" data-bs-toggle="collapse"
                                                     data-bs-target="#collapseOne" aria-expanded="true"
                                                     aria-controls="collapseOne">
                                                     Come posso aggiungere un nuovo studente?
@@ -312,7 +428,7 @@
                                         <!-- item 2 -->
                                         <div class="accordion-item">
                                             <h2 class="accordion-header">
-                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                <button class="accordion-button fw-medium" type="button" data-bs-toggle="collapse"
                                                     data-bs-target="#collapseTwo" aria-expanded="true"
                                                     aria-controls="collapseTwo">
                                                     Come posso accedere alle informazioni del mio account?
@@ -335,7 +451,7 @@
                                             <!-- item 3 -->
                                             <div class="accordion-item">
                                                 <h2 class="accordion-header">
-                                                    <button class="accordion-button" type="button"
+                                                    <button class="accordion-button fw-medium" type="button"
                                                         data-bs-toggle="collapse" data-bs-target="#collapseThree"
                                                         aria-expanded="true" aria-controls="collapseThree">
                                                         Posso usare questa dashboard da mobile?
