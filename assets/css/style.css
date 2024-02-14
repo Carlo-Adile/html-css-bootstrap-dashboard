@@ -75,8 +75,14 @@ body{
     background-color: var(--darkest);
     li{
         padding:3px;
+        :hover {
+            background-color: var(--bs-secondary);
+          }
     }
 }
+
+/* 
+var(--bs-emphasis-color); */
 
 /* right section */
 #ms_rightbar{
